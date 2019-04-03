@@ -43,7 +43,7 @@
             {% endif %}
             {% if mode == 'ajax' and item.type == 'media' %}
 
-                <a class="btn btn-success select-media-button" data-select-media="{{item.id}}" data-select-media-preview="{{ item.path | imagine_filter('opera_thumbnail') }}">
+                <a class="btn btn-success select-media-button" href="#" data-select-media="{{item.id}}" data-select-media-preview="{{ item.path | imagine_filter('opera_thumbnail') }}">
                     Select
                 </a>
 
@@ -81,7 +81,6 @@
         display: inline-block;
         margin: 10px 10px 20px;
         padding: 10px 10px 10px;
-        background-color: #fff;
         border: 1px solid #e3e3e3;
         border-radius: 4px;
         -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
@@ -93,31 +92,21 @@
         border-bottom: 1px solid transparent;
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
-        color: #31708f;
-        background-color: #d9edf7;
-        border-color: #bce8f1;
+
     }
 
     .card-info{
-        border-color: #bce8f1;
         margin: 10px 10px 20px;
         padding: 0;
     }
 
     .card-default{
-        border-color: #bce8f1;
         margin: 10px 10px 20px;
         padding: 0;
     }
 
     .card-body {
         padding: 15px;
-    }
-
-    .card-info > .card-header {
-        color: #31708f;
-        background-color: #d9edf7;
-        border-color: #bce8f1;
     }
 
     .file-preview img {
@@ -127,38 +116,6 @@
     .file-preview {
         min-height: 100px;
         text-align: center;
-    }
-
-    .nav {
-        min-height: 20px;
-        padding: 10px;
-        margin-bottom: 20px;
-        background-color: #f5f5f5;
-        border: 1px solid #e3e3e3;
-        border-radius: 4px;
-        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
-        box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
-    }
-
-    .nav-tabs-custom {
-        margin-bottom: 20px;
-        background: #f5f5f5;
-        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-        border-radius: 3px;
-    }
-
-    .nav-tabs-custom > .nav-tabs > li.active {
-        border-top-color: #3c8dbc;
-    }
-
-    .nav-tabs-custom > .nav-tabs > li {
-        border-top: 3px solid transparent;
-        margin-bottom: -2px;
-        margin-right: 5px;
-    }
-
-    .content-wrapper {
-        background: #F5F5F5;
     }
 
     .content-body {
